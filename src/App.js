@@ -5,6 +5,7 @@ import {Switch, Route} from "react-router-dom";
 import routes from "./routes";
 import Homepage from "./containers/Homepage";
 import FilteredDogs from "./containers/FilteredDogs";
+import { Container } from "reactstrap";
 
 class App extends React.Component{
     render(){

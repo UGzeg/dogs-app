@@ -23,47 +23,37 @@ const Header = () => {
     const toggle = () => setIsOpen(!isOpen);
     return (
         <div>
-            <Navbar color="light" light expand="md">
+            <Navbar color="dark" dark expand="md">
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
-{/*                        {
+                        {
                             navs.map((route) => {
                                 return <NavItem key={route.path}>
-                                    <NavLink>
-                                        <Link to={route.path}>
-                                            {route.title}
-                                        </Link>
-                                    </NavLink>
+                                    <Link to={route.path}>
+                                        <NavLink>{route.title}</NavLink>
+                                    </Link>
                                 </NavItem>
                             })
-                        }*/}
-                        <NavItem>
-                            <NavLink>
-                                <Link to="/">
-                                    Anasayfa
-                                </Link>
-                            </NavLink>
+                        }
+                        {/*<NavItem>
+                            <Link to="/">
+                                <NavLink>Anasayfa</NavLink>
+                            </Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink>
-                                <Link to="/hakkinda">
-                                    Hakkimizda
-                                </Link>
-                            </NavLink>
+                            <Link to="/hakkinda">
+                                <NavLink>Hakkimizda</NavLink>
+                            </Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink>
+                            
                                 <Link to="/tur/golden-retriever">
+                                <NavLink>
                                     Goldens
+                                    </NavLink>
                                 </Link>
-                            </NavLink>
-                        </NavItem>
-
-
-
-
-
+                        </NavItem>*/}
                     </Nav>
                 </Collapse>
             </Navbar>
