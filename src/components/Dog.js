@@ -4,15 +4,11 @@ import { Collapse, CardBody, Card, CardHeader, CardImg, Row, Col, Button } from 
 import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
- 
 const Dog = ({id, name, toggle, getStatus, toggleActive, loadingFavorites, image, breed, age}) => {
     const [isOpen, setIsOpen] = useState(false);
     const acKapa = () => setIsOpen(!isOpen);
     return(
         <>
-
-            {/*<ListGroup>
-            <ListGroupItem key={id}>*/}
                     <Card key={id}>
                         <CardHeader onClick={acKapa} size="sm">{name} {getStatus(id) ? <FontAwesomeIcon icon={fasStar}/> : ""}</CardHeader>
                         <Collapse isOpen={isOpen}>
@@ -25,20 +21,12 @@ const Dog = ({id, name, toggle, getStatus, toggleActive, loadingFavorites, image
                                     <h5>Ad: {name} <FavoriteActions toggle={toggle} id={id} getStatus={getStatus} toggleActive={toggleActive} /></h5>
                                     <h5>Tür: {breed}</h5>
                                     <h5>Yaş: {age}</h5>
-                                    <Button color="primary" size="sm">Detaylı Bilgi...</Button>
+                                    <Button color="primary" size="sm" href={`/detail/${id}`}>Detaylı Bilgi...</Button>
                                 </Col>
                                 </Row>
                             </CardBody>
                         </Collapse>
                     </Card>
-                {/*</ListGroupItem>
-        </ListGroup>*/}
-        
-        {/*<ListGroup>
-      <ListGroupItem key={id}>
-        {name} <FavoriteActions toggle={toggle} id={id} getStatus={getStatus} toggleActive={toggleActive} />
-        </ListGroupItem>
-     </ListGroup>*/}
         </>
     )
 };

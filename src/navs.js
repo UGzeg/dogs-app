@@ -17,8 +17,9 @@ const navs = [
     },
     {
         path: "/hakkinda",
-        title: "Hakkinda"
+        title: "Hakkında"
     },
+    
 ];
 
 
