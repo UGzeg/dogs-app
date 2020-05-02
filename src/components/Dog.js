@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import FavoriteActions from "./FavoriteActions";
 import { Collapse, CardBody, Card, CardHeader, CardImg, Row, Col, Button } from 'reactstrap';
 import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
-import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
  

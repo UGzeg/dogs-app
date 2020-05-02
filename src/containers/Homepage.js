@@ -1,7 +1,5 @@
 import React from 'react';
 import dogs from "../dogsdata";
-import {Button} from "reactstrap";
-import FavoriteActions from "../components/FavoriteActions";
 import Dog from "../components/Dog";
 import axios from "axios";
 
